@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Photo Gallery</title>
-        <link rel="stylesheet" href="gallery.css">
-        <script src = "gallery.js"></script>
-    </head>
-    <body>
 
-        <div id = "image">
-            Hover over an image below to display here.
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <script src="gallery.js" defer></script>
+</head>
 
-        <img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+<body onload="initializeGallery()">
 
-        <img class = "preview" alt = "With My Boy" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" onmouseover = "upDate(this)" onmouseout = "unDo()">
+    <div id="image" tabindex="0">
+        Hover over an image below to display here.
+    </div>
+    <div class="gallery">
+        <img class="preview" alt="Styling with a Bandana"
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" tabindex="0">
 
-        <img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseout = "unDo()">
+        <img class="preview" alt="With My Boy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG"
+            tabindex="0">
 
-    </body>
+        <img class="preview" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt="Young Puppy"
+            tabindex="0">
+
+        <img class="preview" alt="Pitbull Dog"
+            src="https://trungtamthienkhuyen.com/wp-content/uploads/2020/10/pitbull3_0.jpg" tabindex="0">
+
+        <img class="preview" alt="Puppy"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJQZZmNhGaEVnrInDf6Pn-XIv79GpQYbtAQ&s"
+            tabindex="0">
+
+        <img class="preview" alt="Assistance Dog"
+            src="https://www.krqe.com/wp-content/uploads/sites/12/2024/04/Dogweb.jpg?strip=1" tabindex="0">
+
+    </div>
+</body>
+
 </html>
